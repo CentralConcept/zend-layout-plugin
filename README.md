@@ -1,18 +1,19 @@
 #Zend Lyout Plugin.
 Load module based layout if it exist 
 
-In yourBootstrap load it with  
+In yourBootstrap load it with    
+<pre>
 /************************************************************************  
  * LayoutPlugin  
-  **/  
+ **/  
   $frontController = Zend_Controller_Front::getInstance();  
   Zend_Layout::startMvc(array(  
       'layoutPath' => APPLICATION_PATH.'/modules/default/layouts/scripts',  
-          'layout' => 'layout'  
+      'layout' => 'layout'  
  ));
-$layoutModulePlugin = new LayoutPlugin();
-$frontController->registerPlugin($layoutModulePlugin);
-
+ $layoutModulePlugin = new LayoutPlugin();
+ $frontController->registerPlugin($layoutModulePlugin);
+</pre>
 in your module there must be a folder named   
 /modules/'.$modulname.'/layouts/scripts  
 in this folder there must be a phtml file named layout
