@@ -19,7 +19,7 @@ in this folder there must be a phtml file named layout
 
 if in your /modules/'.$modulname.'/layouts/ folder also exist a folder named nav with an xml file inside named navigation, it will loaded as navigation container.  
 structure of these file must be as followd:  
-<code>
+<pre>
 `<?xml version="1.0" encoding="UTF-8"?>`
 	`<configdata>`
 		`<nav>`
@@ -32,7 +32,7 @@ structure of these file must be as followd:
 			`</home>`
 		`</nav>`
 	`</configdata>`
-</code>
+</pre>
 
 to use it call it inside your layout.phtm  with
 
