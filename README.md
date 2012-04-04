@@ -1,4 +1,4 @@
-#Zend Lyout Plugin.
+#Zend Layout Plugin.
 Load module based layout if it exist 
 
 Load your Plugin:   
@@ -23,7 +23,9 @@ In your bootsrap:
 			while (false !== ($file = readdir($handle))) {
 			    if ($file != "." && $file != "..") {
 			        if(is_dir($file))
-			            $front->addControllerDirectory(APPLICATION_PATH . '/modules/'.$file.'/controllers','admin');
+			            $front->addControllerDirectory(
+							APPLICATION_PATH . '/modules/'.$file.'/controllers','admin'
+						);
 			    }
 			}
 		}
