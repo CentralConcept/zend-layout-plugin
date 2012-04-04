@@ -3,13 +3,13 @@ Load module based layout if it exist
 
 In yourBootstrap load it with    
 <pre>
-/************************************************************************  
- * LayoutPlugin  
+/************************************************************************
+ * LayoutPlugin 
  **/  
-  $frontController = Zend_Controller_Front::getInstance();  
-  Zend_Layout::startMvc(array(  
-      'layoutPath' => APPLICATION_PATH.'/modules/default/layouts/scripts',  
-      'layout' => 'layout'  
+  $frontController = Zend_Controller_Front::getInstance();
+  Zend_Layout::startMvc(array(
+      'layoutPath' => APPLICATION_PATH.'/modules/default/layouts/scripts',
+      'layout' => 'layout'
  ));
  $layoutModulePlugin = new LayoutPlugin();
  $frontController->registerPlugin($layoutModulePlugin);
